@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="tw.supra.servtest"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyService.MyService1"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <service
+            android:name=".MyService.MyService2"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <service
+            android:name=".MyService.MyService3"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <service
+            android:name=".MyService.MyService0"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <service
+            android:name=".MyService.MyService4"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <service
+            android:name=".MyService.MyService5"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <service
+            android:name=".MyService.MyService6"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <service
+            android:name=".MyService.MyService7"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <service
+            android:name=".MyService.MyService8"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <service
+            android:name=".MyService.MyService9"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+    </application>
+
+</manifest>
