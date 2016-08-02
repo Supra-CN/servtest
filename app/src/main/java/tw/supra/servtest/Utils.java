@@ -18,9 +18,9 @@ public class Utils {
      */
     private static final int G = K * M;
     /**
-     * 安全边界值
+     * Tib的单位
      */
-    private static final int SAFETY_PADDING = 3 * K;
+    private static final int T = K * G;
 
     private Utils() {
     }
@@ -40,8 +40,10 @@ public class Utils {
             return String.format("%.1fKiB", (Float.valueOf(byteCount) / K));
         } else if (abs < G) {
             return String.format("%.2fMiB", (Float.valueOf(byteCount) / M));
-        } else {
+        } else if(abs < T){
             return String.format("%.2fGiB", (Float.valueOf(byteCount) / G));
+        } else {
+            return String.format("%.2fTiB", (Float.valueOf(byteCount) / T));
         }
     }
 
